@@ -1,12 +1,15 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+import numpy as np
+import os
+import pandas as pd
 
 
 def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+    x_offsets = np.sort(np.concatenate((np.arange(-(12 - 1), 1, 1),)))
+    y_offsets = np.sort(np.arange(1, (12 + 1), 1))
+    print(x_offsets.shape)
+    print(x_offsets)
+    print(y_offsets.shape)
+    print(y_offsets)
 
 
 # Press the green button in the gutter to run the script.
